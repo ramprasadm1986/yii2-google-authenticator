@@ -8,12 +8,12 @@ This PHP class can be used to interact with the Google Authenticator mobile app 
 For a secure installation you have to make sure that used codes cannot be reused (replay-attack). You also need to limit the number of verifications, to fight against brute-force attacks. For example you could limit the amount of verifications to 10 tries within 10 minutes for one IP address (or IPv6 block). It depends on your environment.
 
 ## Install
-`composer require x1ankun/yii2-google-authenticator `
+`composer require ramprasadm1986/yii2-google-authenticator `
 
 ## Configuration
 ```
 'authenticator' => [
-    'class' => 'x1ankun\Authenticator\GoogleAuthenticator'
+    'class' => 'ramprasadm1986\Authenticator\GoogleAuthenticator'
 ]
 ```
 
@@ -21,7 +21,7 @@ For a secure installation you have to make sure that used codes cannot be reused
 ```
 $authenticator = \Yii::$app->authenticator;
 
-//生成Google Authenticator Secret
+//Google Authenticator Secret
 $secret = $authenticator->secret;
 
 //Google Charts URL for the QR-Code
@@ -29,7 +29,7 @@ $authenticator->secret = $secret;
 $authenticator->name = 'EXAMPLE';
 $qRCodeGoogleUrl = $authenticator ->qRCodeGoogleUrl;
 
-//验证Code码
+//Code
 $code = $authenticator->code;
 $authenticator->verifyCode($code); //return bool
 ```
