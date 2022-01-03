@@ -1,0 +1,24 @@
+{
+    "name": "ramprasadm1986/yii2-google-authenticator",
+    "description": "Yii 2 extension wrapper to google authenticator",
+    "keywords": ["yii2", "extension", "compents", "Google Authenticator"],
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Rama Prasad Moharana",
+            "email": "ramprasad@krititech.in"
+        }
+    ],
+   
+    "require": {
+        "yiisoft/yii2": "~2.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "ramprasadm1986\\Authenticator\\": "src"
+        }
+    }
+    
+}
